@@ -41,7 +41,8 @@ def train(epochs: int = 5000, print_every_n: int = 500):
             win_rate_2 += 1
 
         # print the intermediate win rates, if needed
-
+        if epoch % print_every_n == 0:
+            print(epoch)
 
         # update value estimates of both players
         player1.update_state_value_estimates()
@@ -51,8 +52,8 @@ def train(epochs: int = 5000, print_every_n: int = 500):
         judge.reset()
 
     # Save the players' policies
-    player1.save_policy("Policy_player1.pickle")
-    player2.save_policy("Policy_player2.pickle")
+    player1.save_policy("Policy_player1")
+    player2.save_policy("Policy_player2")
 
     # endregion Body
 
@@ -75,14 +76,14 @@ def compete(turns):
     judge = Judge(player1,player2)
 
     # Load the players' policies
-    player1.load_policy("Policy_player1.pickle")
-    player2.load_policy("Policy_player2.pickle")
+    player1.load_policy("Policy_player1")
+    player2.load_policy("Policy_player2")
     # Set the initial win rate of both players to 0
     win_rate_1 = 0
     win_rate_2 = 0
 
     # For every turn
-    for turn in ragne(Turns):
+    for turn in range (turns):
         # get the winner
         winner = judge.play(all_states)
 
@@ -112,7 +113,7 @@ def play():
 
     while True:
         # Create a human player
-        human = HumanPlayer(all_states)
+        human = HumanPlayer()
 
         # Create RL player with ε = 0 exploring probability (i.e. greedy)
         rl_player = RLPlayer (all_states,epsilon=0)
@@ -121,10 +122,10 @@ def play():
         judge = Judge(human, rl_player)
 
         # Load the RL player's policy
-        rl_player.load_policy("Policy_player1.pickle")
+        rl_player.load_policy("Policy_player2")
 
         # Get the winner
-        winner = judge.play()
+        winner = judge.play(all_states)
 
         # Check which player is the winner
         if winner == 1:
