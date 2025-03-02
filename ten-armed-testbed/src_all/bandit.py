@@ -3,7 +3,7 @@ import numpy as np
 class Bandit:
     # region Constructor
 
-    def __init__(self, arms_number: int = 10, use_sample_averages: bool = False, epsilon=0., initial_action_value_estimates=0., confidence_level=None,
+    def __init__(self, arms_number: int = 10, use_sample_averages: bool = False, epsilon=0.0, initial_action_value_estimates=0., confidence_level=None,
                  use_gradient: bool = False, step_size=0.1, use_gradient_baseline: bool = False, true_expected_reward=0.):
         # region Summary
         """
@@ -137,7 +137,7 @@ class Bandit:
         # region ε-greedy
 
         # ε-greedy action selection: every once in a while, with small probability ε, select randomly from among all the actions with equal probability, independently of the action-value estimates.
-        if np.random.random() < self.epsilion:
+        if np.random.random() < self.epsilon:
             return np.random.choice(self.actions)
 
         # endregion ε-greedy
