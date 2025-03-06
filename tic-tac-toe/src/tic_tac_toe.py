@@ -7,13 +7,13 @@ all_states = get_all_states(rows=3, columns=3)
 
 # region Functions
 
-def train(epochs: int = 5000, print_every_n: int = 500):
+"""def train(epochs: int = 5000, print_every_n: int = 500):
     # region Summary
-    """
-    Train 2 RL players
-    :param epochs: number of epochs for training
-    :param print_every_n: number of epochs to print the intermediate win rate
-    """
+    
+    ###Train 2 RL players
+    ###:param epochs: number of epochs for training
+    ###:param print_every_n: number of epochs to print the intermediate win rate
+    
     # endregion Summary
 
     # region Body
@@ -30,7 +30,7 @@ def train(epochs: int = 5000, print_every_n: int = 500):
     win_rate_2 = 0
 
     # For every epoch
-    for epoch in range (epochs):
+    for epoch in range (1, epochs + 1):
         # get the winner
         winner = judge.play(all_states)
 
@@ -52,10 +52,10 @@ def train(epochs: int = 5000, print_every_n: int = 500):
         judge.reset()
 
     # Save the players' policies
-    player1.save_policy("Policy_player1")
-    player2.save_policy("Policy_player2")
+    player1.save_policy()
+    player2.save_policy()
 
-    # endregion Body
+    # endregion Body"""
 
 
 def compete(turns):
@@ -76,14 +76,14 @@ def compete(turns):
     judge = Judge(player1,player2)
 
     # Load the players' policies
-    player1.load_policy("Policy_player1")
-    player2.load_policy("Policy_player2")
+    player1.load_policy()
+    player2.load_policy()
     # Set the initial win rate of both players to 0
     win_rate_1 = 0
     win_rate_2 = 0
 
     # For every turn
-    for turn in range (turns):
+    for turn in range (1, turns + 1):
         # get the winner
         winner = judge.play(all_states)
 
@@ -119,27 +119,27 @@ def play():
         rl_player = RLPlayer (all_states,epsilon=0)
 
         # Create a judge to organize the game
-        judge = Judge(human, rl_player)
+        judge = Judge(player1 = human, player2 = rl_player)
 
         # Load the RL player's policy
-        rl_player.load_policy("Policy_player2")
+        rl_player.load_policy()
 
         # Get the winner
-        winner = judge.play(all_states)
+        winner = judge.play(all_states, print_state=True)
 
         # Check which player is the winner
         if winner == 1:
-            print("haxtanak")
+            print("Հաղթանակ")
         elif winner == -1:
-            print("rl haxtanak")
+            print("Հաղթեց RL մոդելը ")
         else:
-            print("tie")
+            print("Tie")
     # endregion Body
 
 # endregion Functions
 
 
 if __name__ == '__main__':
-    train(epochs=int(1e5))
+    #train(epochs=int(1e5))
     compete(turns=int(1e3))
     play()
