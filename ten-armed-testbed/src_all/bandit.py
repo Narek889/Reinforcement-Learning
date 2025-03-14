@@ -144,6 +144,7 @@ class Bandit:
 
         # region UCB
 
+        #Calculation
         if self.confidence_level is not None:
             UCB_estimation = self.estimated_action_values + self.confidence_level * np.sqrt(np.log(self.time + 1) / (self.action_selection_count + 1e-5))
             action = np.random.choice(np.where(UCB_estimation == np.max(UCB_estimation))[0])
@@ -153,6 +154,7 @@ class Bandit:
 
         #region GBA
 
+        # Calculation by formula
         if self.use_gradient:
             exponenetial_estimates = np.exp(self.estimated_action_values)
             self.action_probability = exponenetial_estimates / np.sum(exponenetial_estimates)
