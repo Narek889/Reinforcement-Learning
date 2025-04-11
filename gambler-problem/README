@@ -1,0 +1,60 @@
+# Gambler's Problem using Reinforcement Learning
+
+This repository contains an implementation of the solution to the classic **Gambler's Problem** using reinforcement learning techniques. The Gambler's Problem is a well-known example used to illustrate dynamic programming and reinforcement learning concepts.
+
+## Problem Description
+
+Imagine a gambler who starts with a certain amount of capital and wants to reach a target amount. On each gamble, they can bet any portion of their capital. If they win, their capital increases by the amount bet; if they lose, their capital decreases by the same amount. The probability of winning each gamble is fixed. The gambler stops when they either reach the target capital or run out of money.
+
+The goal is to find the optimal policy that maximizes the probability of reaching the target capital.
+
+## Implementation
+
+This project likely implements a solution using one or more of the following reinforcement learning or dynamic programming approaches:
+
+* **Value Iteration:** An iterative algorithm to compute the optimal value function for each state (amount of capital).
+* **Policy Iteration:** An iterative algorithm that alternates between evaluating the value function for a given policy and improving the policy based on the value function.
+
+The code is likely implemented in Python and might use libraries like NumPy.
+
+## Files in this Repository
+
+* **`gambler_problem.ipynb` (Likely):** A Jupyter Notebook containing the Python code that implements the solution to the Gambler's Problem. This notebook will likely include:
+    * The problem setup and parameters.
+    * The implementation of the chosen reinforcement learning algorithm (e.g., Value Iteration).
+    * Visualization of the optimal policy and value function.
+* **`README.md`:** This file, providing an overview of the project.
+
+## How to Run
+
+1.  **Clone the repository (if you haven't already):**
+    ```bash
+    git clone [https://github.com/Narek889/Reinforcement-Learning](https://github.com/Narek889/Reinforcement-Learning)
+    cd Reinforcement-Learning/gambler-problem
+    ```
+
+2.  **Open and run the Jupyter Notebook:**
+    You can run the notebook using Jupyter Notebook or Google Colab.
+
+    * **Using Jupyter Notebook (if installed locally):**
+        ```bash
+        jupyter notebook gambler_problem.ipynb
+        ```
+        This will open the notebook in your web browser. Follow the instructions within the notebook to execute the code.
+
+    * **Using Google Colab:**
+        Click on the "Open In Colab" badge at the top of this README or navigate to [https://colab.research.google.com/](https://colab.research.google.com/) and upload the `gambler_problem.ipynb` file from your local machine or directly from the GitHub repository URL.
+
+3.  **Follow the instructions within the notebook:** The notebook will guide you through the implementation and show the results, such as the optimal policy (how much to bet at each capital level) and the probability of reaching the target.
+
+## Dependencies
+
+The implementation likely relies on the following Python libraries:
+
+* **NumPy:** For numerical computations and array manipulation.
+* **Matplotlib (Optional):** For plotting and visualization of the results.
+
+You can install these libraries using pip if you don't have them already:
+
+```bash
+pip install numpy matplotlib
