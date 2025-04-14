@@ -1,0 +1,49 @@
+# GridWorld MDP
+
+This project implements a GridWorld environment modeled as a Markov Decision Process (MDP), serving as a foundational tool for exploring and visualizing reinforcement learning algorithms.
+
+## Project Structure
+
+- **notebook/**: Jupyter notebooks demonstrating reinforcement learning algorithms in the GridWorld environment.
+- **src/**: Source code defining the GridWorld environment and algorithm implementations.
+- **book_images/**: Diagrams used for documentation or educational purposes.
+- **generated_images/**: Visualizations generated from simulations and algorithm executions.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have Python 3.7 or higher installed.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Narek889/Reinforcement-Learning.git
+   cd Reinforcement-Learning/gridworld-mdp
+   ```
+
+2. (Optional) Create and activate a virtual environment:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3.
+### Running the Notebooks
+
+To explore the GridWorld environment and reinforcement learning algorithms:
+
+```bash
+jupyter notebook
+```
+
+Then open any notebook in the `notebook/` directory.
+
+## Features
+
+- **Customizable GridWorld Environment**: Define grid size, obstacles, rewards, and terminal states.
+- **MDP Implementation**: Simulate environments using Markov Decision Processes.
+- **RL Algorithms**: Includes implementations of Value Iteration and Policy Iteration.
+- **Visualization Tools**: View policies and value functions as graphical outputs.
