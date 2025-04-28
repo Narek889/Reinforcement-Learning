@@ -1,49 +1,14 @@
-# GridWorld MDP
+🗺️ GridWorld MDP – Exploring Markov Decision Processes 🧠
 
-This project implements a GridWorld environment modeled as a Markov Decision Process (MDP), serving as a foundational tool for exploring and visualizing reinforcement learning algorithms.
+This project delves into the fundamentals of reinforcement learning by implementing a GridWorld environment modeled as a Markov Decision Process (MDP). It demonstrates how agents can learn optimal policies through value iteration and policy iteration algorithms. ￼ ￼
 
-## Project Structure
+✨ Features
+	•	🔄 Implementation of Value Iteration and Policy Iteration algorithms.
+	•	📊 Visualization of state values and policies.
+	•	🧩 Modular code structure for easy understanding and extension. ￼
 
-- **notebook/**: Jupyter notebooks demonstrating reinforcement learning algorithms in the GridWorld environment.
-- **src/**: Source code defining the GridWorld environment and algorithm implementations.
-- **book_images/**: Diagrams used for documentation or educational purposes.
-- **generated_images/**: Visualizations generated from simulations and algorithm executions.
-
-## Getting Started
-
-### Prerequisites
-
-Make sure you have Python 3.7 or higher installed.
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Narek889/Reinforcement-Learning.git
-   cd Reinforcement-Learning/gridworld-mdp
-   ```
-
-2. (Optional) Create and activate a virtual environment:
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-3.
-### Running the Notebooks
-
-To explore the GridWorld environment and reinforcement learning algorithms:
-
-```bash
-jupyter notebook
-```
-
-Then open any notebook in the `notebook/` directory.
-
-## Features
-
-- **Customizable GridWorld Environment**: Define grid size, obstacles, rewards, and terminal states.
-- **MDP Implementation**: Simulate environments using Markov Decision Processes.
-- **RL Algorithms**: Includes implementations of Value Iteration and Policy Iteration.
-- **Visualization Tools**: View policies and value functions as graphical outputs.
+📁 Project Structure
+	•	src/: Contains the core implementation of the GridWorld environment and MDP algorithms.
+	•	notebook/: Jupyter notebooks for interactive exploration and visualization.
+	•	generated_images/: Stores images generated from the simulations.
+	•	book_images/: Contains reference images from literature for comparison. 

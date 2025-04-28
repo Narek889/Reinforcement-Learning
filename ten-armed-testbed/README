@@ -1,32 +1,13 @@
-Ten-Armed Testbed
+🎰 Ten-Armed Testbed – Multi-Armed Bandit Simulation 🎯
 
-Overview
-The Ten-Armed Testbed is a reinforcement learning project designed to explore and demonstrate the fundamentals of reinforcement learning algorithms. This project focuses on the multi-armed bandit problem, a classic example in reinforcement learning where an agent must decide between multiple actions to maximize reward.
+This project explores the fundamentals of reinforcement learning through the classic multi-armed bandit problem. It simulates a ten-armed bandit scenario to demonstrate how different algorithms balance exploration and exploitation to maximize rewards. ￼ ￼
 
-Features
-- Implementation of various reinforcement learning algorithms.
-- Simulation of the multi-armed bandit problem.
-- Visualization of results and performance metrics.
+✨ Features
+	•	🧠 Implementation of various reinforcement learning algorithms.
+	•	🎲 Simulation of the multi-armed bandit problem.
+	•	📊 Visualization of results and performance metrics. ￼
 
-
-Usage
-To run the simulation, use the following command:
-```bash
-python src_all/main.py
-```
-
-Project Structure
-- `src_all/`: Contains the source code for the project.
-- `generated_images/`: Stores generated images from the simulations.
-- `requirements.txt`: List of Python dependencies.
-
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request.
-
-License
-This project is licensed under the MIT License.
-
-Contact
-For any questions or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
-
----
+📁 Project Structure
+	•	src_all/: Contains the source code for the project.
+	•	generated_images/: Stores generated images from the simulations.
+	•	requirements.txt: List of Python dependencies.

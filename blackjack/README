@@ -1,0 +1,15 @@
+🃏 Blackjack – Reinforcement Learning Agent 🎲
+
+This project implements a reinforcement learning (RL) agent to play the classic card game Blackjack. By employing algorithms like Monte Carlo methods, the agent learns optimal strategies to maximize its winning probability against a dealer. ￼
+
+✨ Features
+	•	🤖 Implementation of RL algorithms (e.g., Monte Carlo methods) for strategy learning.
+	•	📊 Visualization of learned policies and value functions.
+	•	🧩 Modular codebase for easy experimentation and extension.
+
+📁 Project Structure
+	•	src/: Contains the core implementation of the Blackjack environment and RL algorithms.
+	•	notebooks/: Jupyter notebooks for interactive exploration and visualization.
+	•	generated_images/: Stores images generated from simulations.
+	•	book_images/: Contains reference images from literature for comparison.
+	•	requirements.txt: Lists Python dependencies. 

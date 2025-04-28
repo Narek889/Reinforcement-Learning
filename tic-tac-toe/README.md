@@ -1,11 +1,15 @@
-Tic Tac Toe
-Overview
-This Python script implements a Tic Tac Toe game with reinforcement learning (RL) capabilities. The game can be 
-played between two RL players, or between a human player and an RL player. The RL players are trained to play optimally,
-ensuring at least a tie when playing against each other or a human player.
+❌⭕️ Tic-Tac-Toe with Reinforcement Learning 🧠🎮
 
-Requirements
-Python 3.x
-state.py (for managing game states)
-player.py (for defining RL and human players)
-judge.py (for organizing and judging the game)
+This project implements a Tic-Tac-Toe game using reinforcement learning (RL) techniques. Players can engage in matches between two RL agents or between a human and an RL agent. The RL agents are trained to play optimally, ensuring at least a tie when playing against each other or a human player.
+
+✨ Features
+	•	🤖 Play between two RL agents or a human and an RL agent.
+	•	🧠 RL agents trained to play optimally.
+	•	🧩 Modular code structure for easy understanding and extension.
+
+🛠️ Requirements
+	•	🐍 Python 3.x
+	•	📁 Required Python files:
+	•	state.py: Manages game states.
+	•	player.py: Defines RL and human players.
+	•	judge.py: Organizes and judges the game. 
