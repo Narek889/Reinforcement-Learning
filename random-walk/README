@@ -1,0 +1,18 @@
+Random Walk – Reinforcement Learning Experiments
+
+This project implements and compares various reinforcement 
+learning algorithms on the classic Random Walk problem, as introduced 
+in Sutton & Barto’s Reinforcement Learning: An Introduction.
+
+Overview
+
+The Random Walk environment is a simple linear chain of states with 
+terminal states at both ends. An agent starts in the center and moves 
+left or right with equal probability until it reaches a terminal state. 
+The goal is to predict the expected return (value) of each non-terminal state.
+
+Implemented Algorithms
+	•	Monte Carlo (MC) Prediction: Estimates value functions based on averaging returns following each visit to a state.
+	•	Temporal Difference (TD(0)): Updates value estimates based on the difference between successive predictions.
+	•	n-step TD: Generalizes TD(0) by updating estimates based on n-step returns.
+	•	TD(λ): Combines MC and TD methods using eligibility traces and a decay parameter λ. ￼
