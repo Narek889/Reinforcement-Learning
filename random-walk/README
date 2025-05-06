@@ -26,5 +26,3 @@ An agent starts in the center and moves left or right with equal probability unt
 
 - **TD(λ)** 🧮  
   Combines MC and TD using eligibility traces and a decay parameter λ.
-
----
