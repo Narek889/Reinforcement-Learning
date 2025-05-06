@@ -1,21 +1,37 @@
-# Reinforcement Learning Projects
+# 🤖 Reinforcement Learning Projects
 
-This repository is a collection of reinforcement learning (RL) projects implemented in Python and Jupyter Notebooks. It explores foundational RL concepts through hands-on examples and simulations.
+Welcome to my collection of Reinforcement Learning (RL) projects! This repository features practical implementations of core RL algorithms inspired by Sutton & Barto’s classic book *Reinforcement Learning: An Introduction*. Each sub-project is designed to illustrate key RL concepts using simple environments.
 
-## 📁 Repository Structure
+---
 
-- **gridworld-mdp/**: A GridWorld environment modeled as a Markov Decision Process (MDP), demonstrating algorithms like Value Iteration and Policy Iteration.
-- **gridworld-dp/**: Explores Dynamic Programming in GridWorld, focusing on policy evaluation and improvement.
-- **gambler-problem/**: The classic Gambler’s Problem, illustrating value function updates and optimal strategies.
-- **ten-armed-testbed/**: Simulates the 10-armed bandit testbed for studying exploration vs. exploitation.
-- **tic-tac-toe/**: A simple RL agent that learns to play Tic-Tac-Toe.
+## 📁 Projects Overview
 
-## 🧠 Features
+| Project | Description | Algorithms |
+|--------|-------------|------------|
+| [🃏 Blackjack](./blackjack) | Train an agent to play simplified Blackjack using Gym. | Q-Learning, Deep Q-Network (DQN) |
+| [🚶‍♂️ Random Walk](./random-walk) | Estimate value functions in a linear environment. | Monte Carlo, TD(0), n-step TD, TD(λ) |
+| [🌬️ Windy Gridworld](./windy-gridworld) | Navigate a grid under wind forces. | SARSA, Q-Learning, Expected SARSA |
+| [🎰 Gambler's Problem](./gambler-problem) | Optimal betting strategy problem. | Dynamic Programming |
+| [🗺️ Gridworld (DP)](./gridworld-dp) | Solve Gridworld using full model knowledge. | Value Iteration, Policy Iteration |
+| [📊 Gridworld (MDP)](./gridworld-mdp) | Model Gridworld as an MDP. | MDP Framework, Bellman Updates |
+| [🎯 10-Armed Testbed](./ten-armed-testbed) | Explore action selection strategies in a multi-armed bandit setup. | ε-greedy, UCB, Optimistic Init |
+| [❌⭕ Tic-Tac-Toe](./tic-tac-toe) | Learn to play Tic-Tac-Toe through self-play. | Tabular Value Function |
 
-- Implementations of core RL algorithms (e.g., policy/value iteration, dynamic programming).
-- Clear, educational Jupyter notebooks for learning and experimentation.
-- Modular code for easy navigation and extension.
+---
 
-## 🧪 How to Use
+## 🧠 Algorithms Implemented
 
-Open any project directory and launch the corresponding Jupyter notebooks to explore the concepts and experiment with the code.
+- **Model-Free Prediction**: Monte Carlo, TD(0), TD(λ)
+- **Control Methods**: SARSA, Q-Learning, Expected SARSA
+- **Planning**: Dynamic Programming (Policy Iteration, Value Iteration)
+- **Exploration Strategies**: ε-greedy, Optimistic Initialization, UCB
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Narek889/Reinforcement-Learning.git
+cd Reinforcement-Learning
