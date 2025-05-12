@@ -40,5 +40,3 @@ Windy Gridworld is a 7×10 grid where an agent must navigate from a start state 
 Both algorithms utilize an ε-greedy policy for action selection to balance exploration and exploitation.
 
 ---
-
-## 📁 Repository Structure
