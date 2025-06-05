@@ -18,6 +18,7 @@ Welcome to my collection of Reinforcement Learning (RL) projects! This repositor
 | [❌⭕ Tic-Tac-Toe](./projects/tic-tac-toe) | Learn to play Tic-Tac-Toe through self-play. | Tabular Value Function |
 | [🌄 Cliff Walking](./projects/cliff-walking) | Navigate a cliff-edge environment. | SARSA, Q-Learning |
 | [♾️ Infinite Variance](./projects/infinite-variance) | Explore scenarios leading to infinite variance in Monte Carlo estimates. | Monte Carlo Methods |
+| [🎲 Maximization Bias](./projects/maximization-bias) | Demonstrate the effect of maximization bias in value estimation. | Q-Learning, SARSA |
 
 ---
 
