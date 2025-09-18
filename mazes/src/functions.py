@@ -107,51 +107,52 @@ def changing_maze(maze, dyna_params):
     # region Body
 
     # Set up max steps
-
+    max_steps = maze.max_steps
 
     # Track the cumulative rewards
-
+    rewards = np.zeros((dyna_params.runs, 2, max_steps))
 
     # For every run
-
+    for run in tqdm(range(dyna_params.runs)):
         # set up models
-
+        models = [TrivialModel(), TimeModel(maze, time_weight=dyna_params.time_weight)]
 
         # initialize state-action value estimates with 0s
-
+        action_value_estimates = [np.zeros(maze.action_value_estimates_size), np.zeros(maze.action_value_estimates_size)]
 
         # for every method
-
+        for i in range(len(dyna_params.methods)):
             # print('run:', run, dyna_params.methods[i])
 
             # set old obstacles for the maze
-
+            maze.obstacles = maze.old_obstacles
 
             # initialize a counter for steps to 0
-
+            steps = 0
 
             # get the last steps
-
+            last_steps = steps
 
             # while the max steps hasn't been reached
-
+            while steps < max_steps:
                 # play for an episode
-
+                steps += dyna_q(action_value_estimates[i], models[i], maze, dyna_params)
 
                 # update cumulative rewards
-
+                rewards[run, i, last_steps:steps] = rewards[run, i, last_steps]
+                rewards[run, i , min(steps,max_steps -1)] = rewards[run, i, last_steps] + 1
 
                 # get the last steps
-
+                last_steps = steps
 
                 # if it's time to change the obstacles
-
+                if steps > maze.obstacle_switch_time:
                     # change the obstacles
-
+                    maze.obstacles = maze.new_obstacles
 
     # Average rewards
-
-
+    rewards = rewards.mean(axis=0)
+    return rewards
 
 
     # endregion Body
