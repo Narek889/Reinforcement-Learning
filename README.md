@@ -10,7 +10,13 @@ Welcome to my collection of Reinforcement Learning (RL) projects! This repositor
 |--------|-------------|------------|
 | [🃏 Blackjack](./blackjack) | Train an agent to play simplified Blackjack using Gym. | Q-Learning, Deep Q-Network (DQN) |
 | [🚶‍♂️ Random Walk](./random-walk) | Estimate value functions in a linear environment. | Monte Carlo, TD(0), n-step TD, TD(λ) |
-| [🌬️ Windy Gridworld](./windy-gridworld) | Navigate a grid under wind forces. | SARSA, Q-Learning, Expected SARSA |
+| [🚶 Random Walk — n-step TD](./random-walk-ntd) | Study n-step TD methods on Random Walk, comparing bias, variance, and convergence. | n-step TD, Monte Carlo |
+| [🚶 Random Walk — Function Approximation](./random-walk-fa) | Apply linear function approximation to Random Walk. | TD(0), n-step TD, TD(λ) with linear FA |
+| [🎨 Coarse Coding](./coarse-coding) | Feature-based generalization using overlapping tiles. | TD(0), n-step TD, TD(λ) with coarse-coded features |
+| [🎲 Trajectory Sampling](./trajectory-sampling) | Construct returns from sampled trajectories and correct off-policy data. | n-step returns, λ-returns, Importance Sampling |
+| [🌬️ Windy Gridworld](./windy-gridworld) | Navigate a grid under stochastic wind forces. | SARSA, Q-Learning, Expected SARSA |
+| [🗺️ Mazes](./mazes) | Tabular and function approximation agents navigating complex mazes. | Q-Learning, SARSA, n-step TD, Planning (Value Iteration/A*) |
+| [📊 Updates Comparison](./updates-comparison) | Compare TD update methods for bias, variance, and convergence. | TD(0), n-step TD, TD(λ), Monte Carlo |
 | [🎰 Gambler's Problem](./gambler-problem) | Optimal betting strategy problem. | Dynamic Programming |
 | [🗺️ Gridworld (DP)](./gridworld-dp) | Solve Gridworld using full model knowledge. | Value Iteration, Policy Iteration |
 | [📊 Gridworld (MDP)](./gridworld-mdp) | Model Gridworld as an MDP. | MDP Framework, Bellman Updates |
@@ -22,7 +28,6 @@ Welcome to my collection of Reinforcement Learning (RL) projects! This repositor
 
 ---
 
-
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
@@ -30,11 +35,3 @@ Welcome to my collection of Reinforcement Learning (RL) projects! This repositor
 ```bash
 git clone https://github.com/Narek889/Reinforcement-Learning.git
 cd Reinforcement-Learning
-```
----
-
-## 🤖 What is Reinforcement Learning?
-
-**Reinforcement Learning (RL)** is a type of machine learning where an **agent** learns to make decisions by interacting with an **environment** to maximize a **reward**. It’s based on trial and error, learning from experience.
-
----
