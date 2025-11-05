@@ -30,7 +30,3 @@ To use this implementation:
 ## Contributing
 
 Feel free to contribute to this project by submitting pull requests or opening issues for any bugs or feature requests.
-
-## License
-
-This project is part of the Reinforcement Learning repository and follows its licensing terms.
