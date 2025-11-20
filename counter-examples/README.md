@@ -41,4 +41,4 @@ When adding new counter-examples:
 
 ---
 
-*Last updated: 2025-11-12*
+*Last updated: 21.11.2025*
