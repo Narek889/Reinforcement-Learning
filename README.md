@@ -153,10 +153,4 @@ Contributions are welcome! Please:
 **Narek889** — GitHub: https://github.com/Narek889
 
 ---
-
-If you want, I can:
-- Update this README to include short descriptions for each of the 22 projects above (I can draft them now), or
-- Add the two missing projects — if you tell me their names I’ll insert them and produce an updated README ready to commit.
-
-Which would you prefer?
-This README was last updated on December 3, 2025. 😊
+This README was last updated on December 6, 2025. 😊
